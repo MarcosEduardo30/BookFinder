@@ -3,6 +3,12 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form asp-controller="Books" asp-action="Search" method="get">
+        <div class="form-group">
+            <label>Busque um livro!</label>
+            <input class="form-control" id="BookTitle" name="BookTitle" placeholder="Digite o titulo do livro" />
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary">BUSCAR</button>
+    </form>
 </div>
