@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BookFinder.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BookFinder.Controllers
 {
@@ -6,13 +7,16 @@ namespace BookFinder.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Search");
         }
 
-        public IActionResult Search(string BookTitle)
+        public async Task<IActionResult> Search(string BookTitle)
         {
+            //Essa parte do código está aqui somente de forma provisória
+            HttpClient HttpClient = new HttpClient() { BaseAddress = new Uri("https://www.googleapis.com/books/v1/") };
+            var response = await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{BookTitle}&maxResults=15");
             ViewData["BookTitle"] = BookTitle;
-            return View();
+            return View(response);
         }
     }
 }
