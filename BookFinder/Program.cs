@@ -1,3 +1,6 @@
+using BookFinder.Interfaces;
+using BookFinder.Services;
+
 namespace BookFinder
 {
     public class Program
@@ -8,6 +11,7 @@ namespace BookFinder
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IGoogleBooksService, GoogleBooksService>();
 
             var app = builder.Build();
 

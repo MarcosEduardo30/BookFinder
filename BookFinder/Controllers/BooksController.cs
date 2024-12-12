@@ -1,20 +1,24 @@
-﻿using BookFinder.Models;
+﻿using BookFinder.Interfaces;
+using BookFinder.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookFinder.Controllers
 {
     public class BooksController : Controller
     {
+
+        public IGoogleBooksService _bookService { get; set; }
+        public BooksController(IGoogleBooksService bookService) {
+            _bookService = bookService;
+        }
         public IActionResult Index()
         {
             return RedirectToAction("Search");
         }
 
         public async Task<IActionResult> Search(string BookTitle)
-        {
-            //Essa parte do código está aqui somente de forma provisória
-            HttpClient HttpClient = new HttpClient() { BaseAddress = new Uri("https://www.googleapis.com/books/v1/") };
-            var response = await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{BookTitle}&maxResults=15");
+        {   
+            BookList response = await _bookService.GetBooks(BookTitle);
             ViewData["BookTitle"] = BookTitle;
             return View(response);
         }
