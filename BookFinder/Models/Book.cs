@@ -12,5 +12,11 @@
         public List<string> authors { get; set; }
         //public DateTime publishedDate { get; set; }
         public string description { get; set; }
+        public imageLinks? imageLinks { get; set; }
+    }
+    public record class imageLinks
+    {
+        public string smallThumbnail { get; set; }
+        public string thumbnail { get; set; }
     }
 }

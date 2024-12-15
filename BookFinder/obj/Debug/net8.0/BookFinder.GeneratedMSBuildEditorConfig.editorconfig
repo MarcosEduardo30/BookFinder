@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Projects\C#\Bookfinder\BookFinder\BookFinder
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Projects/C\#/Bookfinder/BookFinder/BookFinder/Views/Books/bookDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcYm9va0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/C\#/Bookfinder/BookFinder/BookFinder/Views/Books/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

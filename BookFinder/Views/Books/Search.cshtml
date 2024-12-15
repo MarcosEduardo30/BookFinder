@@ -16,5 +16,15 @@
 <h2>Livros encontrados: @Model.totalItems</h2>
 @foreach (var book in Model.items)
 {
-    <p>@book.volumeInfo.title</p>
+    <div class="card" style="width: 18rm">
+        @if (book.volumeInfo.imageLinks != null)
+        {
+            <img class="card-img-top" src="@book.volumeInfo.imageLinks.smallThumbnail" style="max-height: 200px; max-width: 200px"/>
+        }
+        <div class="card-body">
+            <h5 class="card-title">@book.volumeInfo.title</h5>
+            <p class="card-text">@book.volumeInfo.description</p>
+        </div>
+        <a asp-controller="Books" asp-action="bookDetails" asp-route-id="@book.id" class="btn btn-primary">Ver detalhes</a>
+    </div>
 }

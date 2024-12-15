@@ -1,0 +1,10 @@
+﻿@{
+    @model Book;
+}
+
+<h1>@Model.volumeInfo.title</h1>
+@foreach (var autor in Model.volumeInfo.authors)
+{
+    <h2>@autor</h2>
+}
+<h2>@Model.id</h2>

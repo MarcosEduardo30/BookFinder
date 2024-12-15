@@ -22,5 +22,11 @@ namespace BookFinder.Controllers
             ViewData["BookTitle"] = BookTitle;
             return View(response);
         }
+
+        public async Task<IActionResult> bookDetails(string id)
+        {
+            Book response = await _bookService.GetBook(id);
+            return View(response);
+        }
     }
 }

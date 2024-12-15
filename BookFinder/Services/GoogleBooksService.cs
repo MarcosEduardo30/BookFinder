@@ -12,5 +12,13 @@ namespace BookFinder.Services
                 return await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{searchString}&maxResults=15");
             };
         }
+
+        public async Task<Book> GetBook(string id)
+        {
+            using (HttpClient HttpClient = new HttpClient() { BaseAddress = new Uri("https://www.googleapis.com/books/v1/") })
+            {
+                return await HttpClient.GetFromJsonAsync<Book>($"volumes/{id}");
+            };
+        }
     }
 }
