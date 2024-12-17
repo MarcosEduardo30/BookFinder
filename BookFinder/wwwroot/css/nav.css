@@ -1,0 +1,32 @@
+﻿.nav-Bar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-Container {
+    padding: 0% 8% 0% 5%;
+}
+
+.nav-Link {
+    font-family: 'Inter';
+    font-size: 16px;
+    text-decoration: none;
+    display: inline;
+    color: Black;
+    float: right;
+    text-align: center;
+    padding: 10px 0px 10px 60px;
+}
+
+.nav-Title {
+    font-family: 'Caveat Brush';
+    font-size: 35px;
+    text-decoration: none;
+    display: inline;
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    vertical-align: central;
+}

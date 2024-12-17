@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BookFinder.bundle.scp.css"
     },
     {
+      "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\css\\nav.css",
+      "PackagePath": "staticwebassets\\css\\nav.css"
+    },
+    {
       "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
