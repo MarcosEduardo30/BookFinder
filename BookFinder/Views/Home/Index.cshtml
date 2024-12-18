@@ -2,13 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <form asp-controller="Books" asp-action="Search" method="get">
-        <div class="form-group">
-            <label>Busque um livro!</label>
-            <input class="form-control" id="BookTitle" name="BookTitle" placeholder="Digite o titulo do livro" />
+
+<div>
+    <div class="hero-Container">
+        <img src="~/images/img1.png" class="img"></img>
+        <div class="hero-TextContainer">
+            <h1>
+                Encontre aquele livro que você tanto procura
+            </h1>
+            <p>
+                Procurando novas histórias para ler? Os lançamentos do seu autor favorito? Ou que tal as novidades do seu gênero favorito? O bookfinder pode te ajudar a encontrar a sua nova leitura!
+            </p>
+            <div class="hero-ButtonContainer">
+                <button>Comece a buscar!</button>
+            </div>
         </div>
-        <br/>
-        <button type="submit" class="btn btn-primary">BUSCAR</button>
-    </form>
+    </div>
+        
+    <div style="display: block">
+        <form asp-controller="Books" asp-action="Search" method="get">
+            <div class="form-group">
+                <label>Busque um livro!</label>
+                <input class="form-control" id="BookTitle" name="BookTitle" placeholder="Digite o titulo do livro" />
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">BUSCAR</button>
+        </form>
+    </div>
 </div>

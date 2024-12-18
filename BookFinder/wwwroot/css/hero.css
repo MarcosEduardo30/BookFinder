@@ -1,0 +1,35 @@
+﻿.hero-Container {
+    display: flex;
+    padding-top: 25px;
+}
+
+.hero-ButtonContainer {
+    text-align: center;
+
+}
+
+    .hero-ButtonContainer button {
+        height: 62px;
+        width: 300px;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 2px 2px;
+    }
+
+    .hero-ButtonContainer button:hover {
+        background-color: lightgray;
+    }
+
+.hero-TextContainer {
+    padding: 5% 0% 0% 0%
+}
+
+    .hero-TextContainer p {
+    }
+
+    .hero-TextContainer h1 {
+        font-size: 50px
+    }
+
+
