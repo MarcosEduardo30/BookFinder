@@ -29,3 +29,7 @@ p {
     font-family: 'Spartan'
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}

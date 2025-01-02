@@ -8,16 +8,19 @@
 
 }
 
-    .hero-ButtonContainer button {
+    .hero-ButtonContainer a {
         height: 62px;
         width: 300px;
         font-size: 20px;
         border: 2px solid black;
+        padding-block: 20px;
+        padding-inline: 80px;
         border-radius: 20px;
         box-shadow: 2px 2px;
+        color: black;
     }
 
-    .hero-ButtonContainer button:hover {
+    .hero-ButtonContainer a:hover {
         background-color: lightgray;
     }
 
