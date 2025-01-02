@@ -5,7 +5,7 @@
 
 <div>
     <div class="hero-Container">
-        <img src="~/images/img1.png" class="img"></img>
+        <img src="~/images/img1.png"></img>
         <div class="hero-TextContainer">
             <h1>
                 Encontre aquele livro que você tanto procura
@@ -18,15 +18,17 @@
             </div>
         </div>
     </div>
-        
-    <div style="display: block">
-        <form asp-controller="Books" asp-action="Search" method="get">
-            <div class="form-group">
-                <label>Busque um livro!</label>
-                <input class="form-control" id="BookTitle" name="BookTitle" placeholder="Digite o titulo do livro" />
-            </div>
-            <br />
-            <button type="submit" class="btn btn-primary">BUSCAR</button>
-        </form>
+
+    <div class="search-Container">
+        <img src="~/images/img2.png" class="search-Img"></img>
+        <div class="search-BarContainer">
+            <h1>Busque do seu jeito!</h1>
+            <p>Procure por nome do livro, autor, tópico ou até mesmo editora!</p>
+            <form asp-controller="Books" asp-action="Search" method="get">
+                <input id="BookTitle" name="BookTitle"/>
+                <input type="image" src="~/images/icons/icon_search.png" class="search-Submit" />
+            </form>
+        </div>
+        <img src="~/images/img3.png" class="search-Img"></img>
     </div>
 </div>
