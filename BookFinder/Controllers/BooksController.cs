@@ -16,9 +16,10 @@ namespace BookFinder.Controllers
             return RedirectToAction("Search");
         }
 
-        public async Task<IActionResult> Search(string BookTitle)
-        {   
-            BookList response = await _bookService.GetBooks(BookTitle);
+        public async Task<IActionResult> Search(string BookTitle, int? StartIndex=0)
+        {
+            string searchString = $"{BookTitle}&startIndex={StartIndex}";
+            BookList response = await _bookService.GetBooks(searchString);
             ViewData["BookTitle"] = BookTitle;
             return View(response);
         }

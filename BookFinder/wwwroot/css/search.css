@@ -23,3 +23,7 @@
 .BookList .card-title, .card-footer {
     text-align: center;
 }
+
+.Pagination{
+    text-align: center;
+}

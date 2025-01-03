@@ -25,12 +25,16 @@
                 <h5 class="card-title">@book.volumeInfo.title</h5>
                 <br/>
                 <h6 class="card-subtitle">Autores: </h6>
-                    @foreach (var author in book.volumeInfo.authors)
+                    @if (book.volumeInfo.authors is not null)
                     {
-                        <p class="card-text">
-                            @author
-                        </p>
+                        @foreach (var author in book.volumeInfo.authors)
+                        {
+                            <p class="card-text">
+                                @author
+                            </p>
+                        }
                     }
+
 
                 <h6 class="card-subtitle">Editora: </h6>
                     <p>@book.volumeInfo.publisher</p>
@@ -45,8 +49,16 @@
         </div>
     }
 </div>
-
-    @for (var i = 0; i <= Math.Ceiling((Double)Model.totalItems / 9); i++)
+<div class="Pagination">
+    @for (int i = 0; i < Math.Ceiling((Double)Model.totalItems / 9); i++)
     {
-        <p>@i</p>
+        <a asp-controller="Books" asp-action="Search"
+            asp-route-BookTitle="@ViewData["BookTitle"]"
+            asp-route-StartIndex="@(i*9)"
+            method="get">
+            @(i + 1)
+        </a>
     }
+</div>
+
+
