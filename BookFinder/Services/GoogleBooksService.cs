@@ -9,7 +9,7 @@ namespace BookFinder.Services
         {
             using (HttpClient HttpClient = new HttpClient() { BaseAddress = new Uri("https://www.googleapis.com/books/v1/") })
             {
-                return await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{searchString}&maxResults=15");
+                return await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{searchString}&maxResults=9");
             };
         }
 

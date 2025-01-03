@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wRWTz7Aebnr1Qb8qNLw/aebie7JKA7e0N/Y6WyuLJek=",
+  "Hash": "1MNF2musOaavFJTuUL9dZg46J0ZBf0IaNMUP+u+jSic=",
   "Source": "BookFinder",
   "BasePath": "_content/BookFinder",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\css\\nav.css"
     },
     {
+      "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\css\\search.css",
+      "SourceId": "BookFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\",
+      "BasePath": "_content/BookFinder",
+      "RelativePath": "css/search.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\search.css"
+    },
+    {
       "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\css\\site.css",
       "SourceId": "BookFinder",
       "SourceType": "Discovered",
@@ -129,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\CapaNãoEncontrada.png",
+      "SourceId": "BookFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\",
+      "BasePath": "_content/BookFinder",
+      "RelativePath": "images/CapaNãoEncontrada.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\CapaNãoEncontrada.png"
     },
     {
       "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\icon_search.png",
