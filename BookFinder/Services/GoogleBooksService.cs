@@ -9,7 +9,15 @@ namespace BookFinder.Services
         {
             using (HttpClient HttpClient = new HttpClient() { BaseAddress = new Uri("https://www.googleapis.com/books/v1/") })
             {
-                return await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{searchString}&maxResults=9");
+                BookList bookList;
+                bookList = await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{searchString}&maxResults=9");
+                if (bookList.items is null)
+                {
+                    throw new BadHttpRequestException("Dados de pesquisa inválidos. Nenhum livro foi encontrado");
+                }
+                
+                return bookList;
+               
             };
         }
 

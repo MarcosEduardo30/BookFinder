@@ -19,9 +19,20 @@ namespace BookFinder.Controllers
         public async Task<IActionResult> Search(string BookTitle, int? StartIndex=0)
         {
             string searchString = $"{BookTitle}&startIndex={StartIndex}";
-            BookList response = await _bookService.GetBooks(searchString);
+            BookList response;
+            try
+            {
+                response = await _bookService.GetBooks(searchString);
+            }
+            catch (Exception ex) {
+                ErrorViewModel erro = new ErrorViewModel { RequestId = "400" };
+                return View("Error", erro);            
+            }
+
             ViewData["BookTitle"] = BookTitle;
+            ViewData["startIndex"] = StartIndex;
             return View(response);
+
         }
 
         public async Task<IActionResult> bookDetails(string id)

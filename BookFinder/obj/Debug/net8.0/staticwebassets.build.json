@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1MNF2musOaavFJTuUL9dZg46J0ZBf0IaNMUP+u+jSic=",
+  "Hash": "Poe9gCGPUIfA7k+YyfInmB9dlTEVGhspqSPUJr2KRRw=",
   "Source": "BookFinder",
   "BasePath": "_content/BookFinder",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookFinder.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\css\\details.css",
+      "SourceId": "BookFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\",
+      "BasePath": "_content/BookFinder",
+      "RelativePath": "css/details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\details.css"
     },
     {
       "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\css\\hero.css",

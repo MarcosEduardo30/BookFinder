@@ -50,7 +50,35 @@
     }
 </div>
 <div class="Pagination">
-    @for (int i = 0; i < Math.Ceiling((Double)Model.totalItems / 9); i++)
+        @if ((int)ViewData["startIndex"] >= 9)
+        {
+            <a asp-controller="Books" asp-action="Search"
+               asp-route-BookTitle="@ViewData["BookTitle"]"
+               asp-route-StartIndex="@((int)ViewData["startIndex"] - 9)"
+               method="get">
+                &lt
+            </a>
+        }
+
+    <a  asp-controller="Books" asp-action="Search"
+        asp-route-BookTitle="@ViewData["BookTitle"]"
+        asp-route-StartIndex="@ViewData["startIndex"]"
+        method="get">
+            @(Math.Ceiling(Convert.ToDouble((int)ViewData["startIndex"]) / 9))
+        </a>
+
+
+        @if ((int)ViewData["startIndex"] < Model.totalItems - 9)
+        {
+            <a asp-controller="Books" asp-action="Search"
+               asp-route-BookTitle="@ViewData["BookTitle"]"
+               asp-route-StartIndex="@((int) ViewData["startIndex"] + 9)"
+               method="get">
+                &gt
+            </a>
+        }
+
+@*     @for (int i = 0; i < Math.Ceiling((Double)Model.totalItems / 9); i++)
     {
         <a asp-controller="Books" asp-action="Search"
             asp-route-BookTitle="@ViewData["BookTitle"]"
@@ -58,7 +86,7 @@
             method="get">
             @(i + 1)
         </a>
-    }
+    } *@
 </div>
 
 

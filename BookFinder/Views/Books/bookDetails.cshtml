@@ -1,10 +1,61 @@
 ﻿@{
-    @model Book;
+@model Book;
+
 }
 
-<h1>@Model.volumeInfo.title</h1>
-@foreach (var autor in Model.volumeInfo.authors)
-{
-    <h2>@autor</h2>
-}
-<h2>@Model.id</h2>
+<div class="details-Container">
+    <div class="details-Image-Container">
+        @if (Model.volumeInfo.imageLinks != null)
+        {
+            <img src="@Model.volumeInfo.imageLinks.thumbnail" class="details-Image"></img>
+        }
+        else
+        {
+            <img class="card-img-top" src="~/images/CapaNãoEncontrada.png" />
+        }
+    </div>
+
+    <div class="details-Info-Container">
+        <h1>@Model.volumeInfo.title</h1>
+        <h2>Autores: </h2>
+        @if (Model.volumeInfo.authors is not null){
+            @foreach (var autor in Model.volumeInfo.authors)
+            {
+                <p>@autor</p>
+            }
+            <br />
+        }
+
+        <div class="details-Info">
+            <h2>Editora: </h2>
+            <p style="display: inline">@Model.volumeInfo.publisher</p>
+        </div>
+
+        <div class="details-Info">
+            <h2 style="display: inline">Data de Publicação: </h2>
+            <p style="display: inline">@Model.volumeInfo.publishedDate</p>
+        </div>
+
+        <div class="details-Info">
+            <h2 style="display: inline">Número de páginas: </h2>
+            <p style="display: inline">@Model.volumeInfo.pageCount</p>
+        </div>
+
+    </div>
+
+    <div class="details-Description-Container">
+        <p>@Model.volumeInfo.description</p>
+        <div style="text-align: center;">
+            @if (!string.IsNullOrEmpty(Model.saleInfo.buyLink))
+            {
+                <a class="btn btn-primary" href="@Model.saleInfo.buyLink" target="_blank">Comprar</a>
+            }
+            @if (!string.IsNullOrEmpty(Model.volumeInfo.previewLink))
+            {
+                <a class="btn btn-primary" href="@Model.volumeInfo.previewLink" target="_blank">Ver prévia</a>
+            }
+        </div>
+
+    </div>
+</div>
+

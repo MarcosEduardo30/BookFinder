@@ -1,0 +1,31 @@
+﻿.details-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.details-Image-Container{
+    flex-basis: 25%;
+}
+
+.details-Info-Container {
+    flex-basis: 25%;
+}
+
+.details-Info {
+    display: "block";
+    line-height: 35px;
+}
+
+.details-Description-Container {
+    flex-basis: 45%;
+}
+.details-Image {
+    min-height: 250px;
+    min-width: 250px
+}
+
+.details-Container h2 {
+    display: inline;
+    font-size: 20px;
+}
