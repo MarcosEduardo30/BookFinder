@@ -20,12 +20,13 @@ namespace BookFinder.Controllers
         {
             string searchString = $"{BookTitle}&startIndex={StartIndex}";
             BookList response;
+
             try
             {
                 response = await _bookService.GetBooks(searchString);
             }
             catch (Exception ex) {
-                ErrorViewModel erro = new ErrorViewModel { RequestId = "400" };
+                ErrorModel erro = new ErrorModel { ErrorMessage = "Nenhum livro foi encontrado" };
                 return View("Error", erro);            
             }
 
