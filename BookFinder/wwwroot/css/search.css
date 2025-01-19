@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.Pagination{
+.search-Pagination {
     text-align: center;
     font-size: 20px;
 }
@@ -37,7 +37,7 @@
         grid-template-rows: auto auto;
     }
 
-    .Pagination {
+    .search-Pagination {
         text-align: center;
         font-size: 30px;
     }

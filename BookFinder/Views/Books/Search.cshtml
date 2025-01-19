@@ -49,7 +49,8 @@
         </div>
     }
 </div>
-<div class="Pagination">
+
+<div class="search-Pagination">
         @if ((int)ViewData["startIndex"] >= 9)
         {
             <a asp-controller="Books" asp-action="Search"
@@ -59,7 +60,6 @@
                 &lt
             </a>
         }
-
     <a  asp-controller="Books" asp-action="Search"
         asp-route-BookTitle="@ViewData["BookTitle"]"
         asp-route-StartIndex="@ViewData["startIndex"]"
@@ -77,16 +77,6 @@
                 &gt
             </a>
         }
-
-@*     @for (int i = 0; i < Math.Ceiling((Double)Model.totalItems / 9); i++)
-    {
-        <a asp-controller="Books" asp-action="Search"
-            asp-route-BookTitle="@ViewData["BookTitle"]"
-            asp-route-StartIndex="@(i*9)"
-            method="get">
-            @(i + 1)
-        </a>
-    } *@
 </div>
 
 
