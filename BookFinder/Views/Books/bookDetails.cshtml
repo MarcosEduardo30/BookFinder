@@ -16,14 +16,13 @@
     </div>
 
     <div class="details-Info-Container">
-        <h1>@Model.volumeInfo.title</h1>
+        <h1 class="details-Title">@Model.volumeInfo.title</h1>
         <h2>Autores: </h2>
         @if (Model.volumeInfo.authors is not null){
             @foreach (var autor in Model.volumeInfo.authors)
             {
                 <p>@autor</p>
             }
-            <br />
         }
 
         <div class="details-Info">

@@ -64,7 +64,7 @@
         asp-route-BookTitle="@ViewData["BookTitle"]"
         asp-route-StartIndex="@ViewData["startIndex"]"
         method="get">
-            @(Math.Ceiling(Convert.ToDouble((int)ViewData["startIndex"]) / 9))
+            @(Math.Ceiling(Convert.ToDouble((int)ViewData["startIndex"]) / 9 + 0.0001))
         </a>
 
 

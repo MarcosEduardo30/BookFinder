@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Poe9gCGPUIfA7k+YyfInmB9dlTEVGhspqSPUJr2KRRw=",
+  "Hash": "XmVomkL7+weib/bwv0uISPQtg7WaFHLXHZJ3rl7ij0U=",
   "Source": "BookFinder",
   "BasePath": "_content/BookFinder",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\CapaNãoEncontrada.png"
+    },
+    {
+      "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\icon_menu.png",
+      "SourceId": "BookFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\",
+      "BasePath": "_content/BookFinder",
+      "RelativePath": "images/icons/icon_menu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\icon_menu.png"
     },
     {
       "Identity": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\icon_search.png",

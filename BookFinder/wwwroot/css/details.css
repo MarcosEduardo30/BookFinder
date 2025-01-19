@@ -29,3 +29,19 @@
     display: inline;
     font-size: 20px;
 }
+
+@media (max-width: 992px){
+    .details-Container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details-Title {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .details-Info-Container {
+        margin-bottom: 30px;
+    }
+}

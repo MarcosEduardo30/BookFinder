@@ -12,21 +12,59 @@
     font-family: 'Inter';
     font-size: 16px;
     text-decoration: none;
-    display: inline;
-    color: Black;
+    display: block;
+    color: #000000;
     float: right;
     text-align: center;
     padding: 10px 0px 10px 60px;
+}
+
+    .nav-Link a {
+        color: #000000;
+    }
+
+.nav-Menu {
+    text-decoration: none;
+    display: none;
+    text-align: center;
+    padding: 10px 0px 10px;
+    text-align: right;
+    float: none;
+    cursor: pointer;
+}
+
+.nav-Img {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.nav-Toggle .nav-Link{
+    display: block;
 }
 
 .nav-Title {
     font-family: 'Caveat Brush';
     font-size: 35px;
     text-decoration: none;
-    display: inline;
+    display: block;
     color: black;
     float: left;
     text-align: center;
     padding: 0px 0px 20px 0px;
     vertical-align: central;
+}
+
+@media (max-width: 600px){
+    .nav-Menu {
+        display: block;
+    }
+    .nav-Title{
+        display: block;
+    }
+    .nav-Link {
+        display: none;
+        text-align: right;
+        float: none;
+        padding: 10px 0px 10px 0px;
+    }
 }

@@ -2,3 +2,9 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+function toggleNavBar() {
+    var nav = document.getElementById("navBar");
+    nav.classList.toggle("nav-Toggle");
+}

@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\CapaNãoEncontrada.png"
     },
     {
+      "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\icon_menu.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_menu.png"
+    },
+    {
       "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\icon_search.png",
       "PackagePath": "staticwebassets\\images\\icons\\icon_search.png"
     },

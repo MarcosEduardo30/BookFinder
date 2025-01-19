@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,18 +17,24 @@
 </head>
 <body>
     <header>
-        <nav class="nav-Bar">
+        <nav class="nav-Bar" id="navBar">
             <div class="nav-Container">
                 <ul>
                     <li class="nav-Title">
                         <a asp-controller="Home" asp-action="Index">BookFinder</a>
                     </li>
-                    <li class="nav-Link">
-                        <a>Contato</a>
+                    <li class="nav-Menu" onclick="toggleNavBar()">
+                        <a>
+                            <img class="nav-Img" src="~/images/icons/icon_menu.png" />
+                        </a>
                     </li>
                     <li class="nav-Link">
-                        <a>Sobre</a>
+                        <a href="https://www.linkedin.com/in/marcos-eduardo-475160221" target="_blank">Contato</a>
                     </li>
+                    <li class="nav-Link">
+                        <a href="https://github.com/MarcosEduardo30/BookFinder" target="_blank">Sobre</a>
+                    </li>
+
                 </ul>
             </div>
 
