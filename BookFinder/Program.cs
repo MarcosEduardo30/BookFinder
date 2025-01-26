@@ -1,5 +1,5 @@
-using BookFinder.Interfaces;
 using BookFinder.Services;
+using BookFinder.Services.Interfaces;
 
 namespace BookFinder
 {

@@ -1,5 +1,5 @@
-﻿using BookFinder.Interfaces;
-using BookFinder.Models;
+﻿using BookFinder.Models;
+using BookFinder.Services.Interfaces;
 
 namespace BookFinder.Services
 {
@@ -10,7 +10,8 @@ namespace BookFinder.Services
             using (HttpClient HttpClient = new HttpClient() { BaseAddress = new Uri("https://www.googleapis.com/books/v1/") })
             {
                 BookList bookList;
-                bookList = await HttpClient.GetFromJsonAsync<BookList>($"volumes?q=+intitle:{searchString}&maxResults=9");
+                bookList = await HttpClient.GetFromJsonAsync<BookList>($"volumes?q={searchString}&maxResults=9");
+
                 if (bookList.items is null)
                 {
                     throw new BadHttpRequestException("Dados de pesquisa inválidos. Nenhum livro foi encontrado");

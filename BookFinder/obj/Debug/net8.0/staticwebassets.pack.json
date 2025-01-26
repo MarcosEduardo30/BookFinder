@@ -25,12 +25,12 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\CapaNãoEncontrada.png",
       "PackagePath": "staticwebassets\\images\\CapaNãoEncontrada.png"
+    },
+    {
+      "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\icons\\favicon.ico"
     },
     {
       "Id": "D:\\Projects\\C#\\Bookfinder\\BookFinder\\BookFinder\\wwwroot\\images\\icons\\icon_menu.png",

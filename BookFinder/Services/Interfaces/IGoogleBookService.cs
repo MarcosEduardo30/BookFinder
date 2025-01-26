@@ -1,6 +1,6 @@
 ﻿using BookFinder.Models;
 
-namespace BookFinder.Interfaces
+namespace BookFinder.Services.Interfaces
 {
     public interface IGoogleBooksService
     {

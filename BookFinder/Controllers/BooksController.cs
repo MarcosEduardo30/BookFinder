@@ -1,5 +1,5 @@
-﻿using BookFinder.Interfaces;
-using BookFinder.Models;
+﻿using BookFinder.Models;
+using BookFinder.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookFinder.Controllers
