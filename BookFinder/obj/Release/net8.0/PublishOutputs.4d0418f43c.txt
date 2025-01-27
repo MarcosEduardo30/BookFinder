@@ -1,0 +1,7 @@
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\BookFinder.exe
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\BookFinder.dll
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\BookFinder.deps.json
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\BookFinder.runtimeconfig.json
+D:\Projects\C#\Bookfinder\BookFinder\BookFinder\obj\Release\net8.0\PubTmp\Out\BookFinder.pdb

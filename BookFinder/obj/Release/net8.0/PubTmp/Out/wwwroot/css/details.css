@@ -1,0 +1,47 @@
+﻿.details-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.details-Image-Container{
+    flex-basis: 25%;
+}
+
+.details-Info-Container {
+    flex-basis: 25%;
+}
+
+.details-Info {
+    display: "block";
+    line-height: 35px;
+}
+
+.details-Description-Container {
+    flex-basis: 45%;
+}
+.details-Image {
+    min-height: 250px;
+    min-width: 250px
+}
+
+.details-Container h2 {
+    display: inline;
+    font-size: 20px;
+}
+
+@media (max-width: 992px){
+    .details-Container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details-Title {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .details-Info-Container {
+        margin-bottom: 30px;
+    }
+}
