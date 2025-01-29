@@ -107,4 +107,7 @@ input {
     .hero-ButtonContainer a {
         font-size: 15px;
     }
+    input {
+        width: 100%
+    }
 }
