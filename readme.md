@@ -15,7 +15,7 @@
 </p>
 
 <p>
-    O objetivo do estudo de caso foi se familiarizar com a criação de aplicação no ASP.NET, integrar um sistema C# com uma API externa e conhecer o processo de deploy de uma aplicação web na internet usando o Azure.
+    O objetivo do estudo de caso foi se familiarizar com a criação de aplicação ASP.NET, integrar um sistema C# com uma API externa e conhecer o processo de deploy de uma aplicação web na internet usando o Azure.
 </p>
 
 ## Demonstração Online (Azure)
@@ -38,7 +38,12 @@
 dotnet run
 ``
 
-* O projeto estará disponível para ser acesso através da URL `http://localhost:5054`
+* O projeto estará disponível através da URL `http://localhost:5054`
+
+## Licença
+
+<a href="https://github.com/MarcosEduardo30/BookFinder/blob/master/LICENSE">MIT</a>
+
 
 
 
